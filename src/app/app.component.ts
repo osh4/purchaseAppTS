@@ -1,5 +1,6 @@
-import { Component, OnChanges, SimpleChanges } from '@angular/core';
-     
+import { Component, ViewChild, ElementRef } from '@angular/core';
+import { ChildComponent} from './child.component';
+
 class Item{
     purchase: string;
     done: boolean;
@@ -19,6 +20,13 @@ class Item{
     styleUrls: ['./app.component.css']
 })
 export class AppComponent { 
-    name:string="Tom";
-   
+   @ViewChild("nameText", {static: false})
+    nameParagraph: ElementRef;
+     
+    name: string = "Tom";
+     
+    change() { 
+        console.log(this.nameParagraph.nativeElement.textContent); 
+        this.nameParagraph.nativeElement.textContent = "hell";
+    }
 }

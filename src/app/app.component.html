@@ -1,2 +1,3 @@
-<child-comp [name]="name"></child-comp>
-                <input type="text" [(ngModel)]="name" />
+<p #nameText>{{name}}</p>
+               <p>{{nameText.textContent}}</p>
+               <button (click)="change()">Изменить</button>
