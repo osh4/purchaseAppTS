@@ -19,7 +19,8 @@ class Item{
     styleUrls: ['./app.component.css']
 })
 export class AppComponent { 
-    name = 'Tom',
+    name:string="Tom";
+    age:number = 24;
     items: Item[] = 
     [
         { purchase: "Хлеб", done: false, price: 15.9 },
