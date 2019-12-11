@@ -1,3 +1,2 @@
-<child-comp [(userName)]="name"></child-comp>
-                <div>Выбранное имя: {{name}}</div>
-
+<child-comp [name]="name"></child-comp>
+                <input type="text" [(ngModel)]="name" />

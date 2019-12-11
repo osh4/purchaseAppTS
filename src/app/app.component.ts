@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
      
 class Item{
     purchase: string;
@@ -19,18 +19,6 @@ class Item{
     styleUrls: ['./app.component.css']
 })
 export class AppComponent { 
-    name: string = "Tom";
-    items: Item[] = 
-    [
-        { purchase: "Хлеб", done: false, price: 15.9 },
-        { purchase: "Масло", done: false, price: 60 },
-        { purchase: "Картофель", done: true, price: 22.6 },
-        { purchase: "Сыр", done: false, price:310 }
-    ];
-    addItem(text: string, price: number): void {
-         
-        if(text==null || text.trim()=="" || price==null)
-            return;
-        this.items.push(new Item(text, price));
-    }
+    name:string="Tom";
+   
 }
