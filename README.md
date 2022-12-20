@@ -1,1 +1,1 @@
-This is test Angular app created by articles from metanit.com
+This is test Angular app created by articles from [Metanit](https://metanit.com/web/angular2/)
